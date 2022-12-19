@@ -27,6 +27,7 @@ root.render(
     {/* APONTA ERROS, BUGS*/}
     <Provider store={store}>
       {' '}
+      {/* MAKES STORE AVAILABLE TO ANY NESTED COMPONENTS */}{' '}
       {/*CONFIGURA DADOS "GLOBAIS" PARA TODA A APLICAÇÃO*/}
       <App /> {/*APLICAÇÃO */}
     </Provider>

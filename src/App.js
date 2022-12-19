@@ -30,7 +30,11 @@ function App() {
             <Route element={<Layout />}>
               {' '}
               {/*LAYOUT GERAL PADRÃO ENVELOPA O QUE FOR DINAMICO*/}
-              <Route path="/" element={<Navigate to="/dashboard" replace />} />
+              <Route
+                path="/"
+                element={<Navigate to="/dashboard" replace />}
+              />{' '}
+              {/*Here are path names that connects to server */}
               <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/products" element={<Products />} />
               <Route path="/customers" element={<Customers />} />
